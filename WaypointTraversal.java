@@ -29,7 +29,7 @@ public class WaypointTraversal {
 			System.err.println("Usage: java WaypointTraversal [PointsList|Quadtree|ByX|ByY] outfile infiles");
 			System.exit(1);
 		}
-		Point2DCollection<Waypoint> points = null;
+		PointSet2D<Waypoint> points = null;
 		if (args[0].equalsIgnoreCase("PointSetList")) {
 			points = new PointSetList<Waypoint>();
 		} else if (args[0].equalsIgnoreCase("Quadtree")) {

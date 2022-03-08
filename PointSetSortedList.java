@@ -11,7 +11,7 @@ import java.util.Iterator;
  * @author Jim Teresco
  * @version Spring 2022
  */
-public class PointsSetSortedList<E extends Point2D.Double> implements PointSet2D<E> {
+public class PointSetSortedList<E extends Point2D.Double> implements PointSet2D<E> {
 
     public static final int ORDER_BY_X = 0;
     public static final int ORDER_BY_Y = 1;
@@ -25,7 +25,7 @@ public class PointsSetSortedList<E extends Point2D.Double> implements PointSet2D
      * @param order Either ORDER_BY_X or ORDER_BY_Y to determine which
      *              coordinate is to be used for the ordering
      */
-    public PointsSetSortedList(int order) {
+    public PointSetSortedList(int order) {
 
         points = new ArrayList<E>();
         if (order == ORDER_BY_X) {
